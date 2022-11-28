@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Primary Meta Tags -->
+    <title>User Register | Spot Finder</title>
+
+
+	<!-- CSS Files -->
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+
+
+
+<!-- Volt CSS -->
+<link type="text/css" href="css/volt.css" rel="stylesheet">
+
+<!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+
+    <main style="overflow: scroll;">
+
+        <!-- Section -->
+        <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center" style="padding: 50px;">
+            <div class="container">
+
+                <div class="row justify-content-center form-bg-image">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5  " style="width: 750px;">
+                            <div class="text-center text-md-center mb-4 mt-md-0">
+                                <h1 class="mb-0 h3">REGISTER ACCOUNT </h1>
+                            </div>
+                            <form id="register" action="userRegister" class="mt-4">
+
+                                <div class="row mb-3">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" class="form-control" id="name"
+                                                placeholder="Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" class="form-control" id="email"
+                                                placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="mobile">Mobile Number</label>
+                                            <input type="number" name="mobile" class="form-control" id="mobile"
+                                                placeholder="Mobile" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" name="password" class="form-control" id="password"
+                                                placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="city">City</label>
+                                            <input type="text" name="city" class="form-control" id="city"
+                                                placeholder="City" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input  checked class="form-check-input" type="checkbox" value="" id="remember" required>
+                                    <label class="form-check-label mb-0" for="remember">
+                                        Accept the term and conditions
+                                    </label>
+                                </div>
+
+                                    <div class="d-grid mt-2">
+                                        <button type="submit" class="btn btn-gray-800">Register</button>
+                                    </div>
+                            </form>
+                            <div class="d-flex justify-content-center align-items-center mt-4">
+                                <span class="fw-normal">
+                                    Already have an account?
+                                    <a href="userLogin.html" class="fw-bold">Login here</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Sweet Alerts 2 -->
+    <script src="assets/js/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Volt JS -->
+    <script src="assets/js/volt.js"></script>
+    
+    <!-- jQuery UI -->
+	<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<!-- Sweet Alert -->
+	<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    
+    
+	<script type="text/javascript">
+	$('#register').submit(function(e) {
+		swal("Successfully Register! ", "Your Registration is Completed!", {
+			icon: "success",
+			buttons: {
+				confirm: {
+					className: 'btn btn-success'
+				}
+			},
+		});
+		
+	});
+	</script>
+	
+	
+
+</body>
+
+</html>
